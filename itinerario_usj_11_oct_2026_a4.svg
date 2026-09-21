@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508" fill="#102A43">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EDF3FA"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#102A43"/>
+      <stop offset="1" stop-color="#174E7A"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#102A43" flood-opacity=".13"/>
+    </filter>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,4 L5,2 z" fill="#FF5A36"/>
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .white { fill: #fff; }
+      .muted { fill: #52697F; }
+      .small { font-size: 29px; }
+      .body { font-size: 32px; }
+      .label { font-size: 31px; font-weight: 700; }
+      .time { font-size: 31px; font-weight: 800; fill: #0C6E76; }
+      .step { fill: #FF5A36; stroke: #fff; stroke-width: 8; }
+      .stepText { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; dominant-baseline: central; }
+      .area { stroke: #fff; stroke-width: 8; filter: url(#shadow); }
+      .areaTitle { font-size: 30px; font-weight: 900; text-anchor: middle; }
+      .areaSub { font-size: 24px; font-weight: 600; text-anchor: middle; fill: #345; }
+    </style>
+  </defs>
+
+  <rect width="2480" height="3508" fill="url(#bg)"/>
+  <rect x="0" y="0" width="2480" height="510" fill="url(#header)"/>
+  <circle cx="2220" cy="92" r="195" fill="#FFC928" opacity=".95"/>
+  <circle cx="2340" cy="310" r="145" fill="#FF5A36" opacity=".9"/>
+  <circle cx="2060" cy="345" r="92" fill="#37B6A5" opacity=".85"/>
+
+  <text x="110" y="112" class="white" font-size="35" font-weight="800" letter-spacing="4">UNIVERSAL STUDIOS JAPAN · PLAN SIN EXPRESS PASS</text>
+  <text x="110" y="245" class="white" font-size="92" font-weight="900">RUTA DE UN DÝA</text>
+  <text x="110" y="332" fill="#FFC928" font-size="54" font-weight="900">PRIMERA MISIÓN: SUPER NINTENDO WORLD</text>
+  <text x="110" y="418" class="white" font-size="37" font-weight="700">DOMINGO 11 OCT 2026  ·  08:00-22:00  ·  LLEGAR 06:15</text>
+  <text x="110" y="468" fill="#CDE4F5" font-size="27">La entrada puede comenzar antes del horario oficial. No esperen a las 08:00.</text>
+
+  <!-- MAP PANEL -->
+  <rect x="90" y="565" width="1460" height="2125" rx="34" fill="#fff" filter="url(#shadow)"/>
+  <text x="145" y="650" font-size="42" font-weight="900">MAPA DE RUTA</text>
+  <text x="145" y="696" class="muted" font-size="26">ESQUEMÝTICO · SIGAN LOS LETREROS Y LA LÝNEA NARANJA</text>
+
+  <!-- lagoon and paths -->
+  <path d="M620 1030 C920 790 1300 930 1370 1260 C1435 1570 1280 1990 1010 2180 C760 2350 480 2100 465 1740 C450 1440 470 1200 620 1030Z"
+        fill="#DDF4FA" stroke="#A9DDEA" stroke-width="11"/>
+  <text x="940" y="1650" text-anchor="middle" fill="#83BCCA" font-size="36" font-weight="800">LAGUNA</text>
+  <path d="M790 2485 C880 2350 1035 2265 1190 2150 C1325 2050 1400 1875 1390 1660 C1380 1420 1300 1190 1135 1020 C930 820 670 840 500 1015 C335 1190 300 1470 360 1715 C410 1950 555 2190 790 2485Z"
+        fill="none" stroke="#CAD7E3" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- areas -->
+  <rect x="235" y="778" width="405" height="255" rx="55" fill="#A9DF65" class="area"/>
+  <text x="437" y="862" class="areaTitle">SUPER NINTENDO</text>
+  <text x="437" y="902" class="areaTitle">WORLD</text>
+  <text x="437" y="956" class="areaSub">Mario · Donkey Kong · Yoshi</text>
+
+  <rect x="695" y="755" width="360" height="180" rx="52" fill="#65C8E8" class="area"/>
+  <text x="875" y="833" class="areaTitle">WATERWORLD</text>
+  <text x="875" y="878" class="areaSub">show según horario</text>
+
+  <rect x="590" y="1080" width="330" height="205" rx="55" fill="#79C9D1" class="area"/>
+  <text x="755" y="1162" class="areaTitle">AMITY</text>
+  <text x="755" y="1206" class="areaSub">JAWS</text>
+
+  <rect x="168" y="1275" width="390" height="290" rx="70" fill="#A6A1D6" class="area"/>
+  <text x="363" y="1374" class="areaTitle">HARRY POTTER</text>
+  <text x="363" y="1421" class="areaSub">Forbidden Journey</text>
+  <text x="363" y="1459" class="areaSub">Hippogriff · Hogsmeade</text>
+
+  <rect x="1040" y="930" width="375" height="315" rx="70" fill="#6FC184" class="area"/>
+  <text x="1227" y="1030" class="areaTitle">JURASSIC PARK</text>
+  <text x="1227" y="1080" class="areaSub">Flying Dinosaur</text>
+  <text x="1227" y="1120" class="areaSub">Jurassic Park - The Ride</text>
+
+  <rect x="1130" y="1340" width="330" height="245" rx="62" fill="#F6B66D" class="area"/>
+  <text x="1295" y="1435" class="areaTitle">SAN FRANCISCO</text>
+  <text x="1295" y="1481" class="areaSub">comida · descanso</text>
+
+  <rect x="1120" y="1685" width="350" height="235" rx="62" fill="#FFE07A" class="area"/>
+  <text x="1295" y="1775" class="areaTitle">MINION PARK</text>
+  <text x="1295" y="1821" class="areaSub">Villain-Con · Mayhem</text>
+
+  <rect x="1000" y="1995" width="410" height="225" rx="62" fill="#EE989D" class="area"/>
+  <text x="1205" y="2082" class="areaTitle">NEW YORK</text>
+  <text x="1205" y="2128" class="areaSub">Halloween · temporada</text>
+
+  <rect x="665" y="2215" width="415" height="205" rx="58" fill="#87B8EA" class="area"/>
+  <text x="872" y="2297" class="areaTitle">HOLLYWOOD</text>
+  <text x="872" y="2343" class="areaSub">Hollywood Dream</text>
+
+  <rect x="270" y="1975" width="340" height="205" rx="58" fill="#F5B6D2" class="area"/>
+  <text x="440" y="2054" class="areaTitle">WONDERLAND</text>
+  <text x="440" y="2100" class="areaSub">pasar de largo al inicio</text>
+
+  <path d="M790 2550 L790 2415 L925 2315 L650 2165 L585 1900 L470 1580 L655 1250 L600 1080 L505 1015 L455 980"
+        fill="none" stroke="#102A43" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M790 2550 L790 2415 L925 2315 L650 2165 L585 1900 L470 1580 L655 1250 L600 1080 L505 1015 L455 980"
+        fill="none" stroke="#FF5A36" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <path d="M545 930 L760 875 L735 1110 L520 1405 L720 1270 L1115 1110 L1275 1445 L1290 1765 L1190 2050 L930 2290 L790 2550"
+        fill="none" stroke="#102A43" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M545 930 L760 875 L735 1110 L520 1405 L720 1270 L1115 1110 L1275 1445 L1290 1765 L1190 2050 L930 2290 L790 2550"
+        fill="none" stroke="#FF5A36" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+
+  <!-- steps -->
+  <g><circle cx="820" cy="2475" r="39" class="step"/><text x="820" y="2475" class="stepText">1</text></g>
+  <g><circle cx="450" cy="975" r="39" class="step"/><text x="450" y="975" class="stepText">2</text></g>
+  <g><circle cx="760" cy="875" r="39" class="step"/><text x="760" y="875" class="stepText">3</text></g>
+  <g><circle cx="735" cy="1160" r="39" class="step"/><text x="735" y="1160" class="stepText">4</text></g>
+  <g><circle cx="500" cy="1405" r="39" class="step"/><text x="500" y="1405" class="stepText">5</text></g>
+  <g><circle cx="1120" cy="1100" r="39" class="step"/><text x="1120" y="1100" class="stepText">6</text></g>
+  <g><circle cx="1275" cy="1445" r="39" class="step"/><text x="1275" y="1445" class="stepText">7</text></g>
+  <g><circle cx="1290" cy="1765" r="39" class="step"/><text x="1290" y="1765" class="stepText">8</text></g>
+  <g><circle cx="1190" cy="2050" r="39" class="step"/><text x="1190" y="2050" class="stepText">9</text></g>
+  <g><circle cx="930" cy="2290" r="39" class="step"/><text x="930" y="2290" class="stepText">10</text></g>
+  <g><circle cx="760" cy="2585" r="39" class="step"/><text x="760" y="2585" class="stepText">11</text></g>
+
+  <path d="M740 2590 L840 2590 L790 2660Z" fill="#102A43"/>
+  <text x="790" y="2640" text-anchor="middle" class="white" font-size="23" font-weight="900">SALIDA</text>
+  <text x="1430" y="755" text-anchor="middle" font-size="25" font-weight="800">N</text>
+  <path d="M1430 775 L1408 827 L1430 815 L1452 827Z" fill="#102A43"/>
+
+  <!-- TIMELINE PANEL -->
+  <rect x="1590" y="565" width="800" height="2125" rx="34" fill="#fff" filter="url(#shadow)"/>
+  <text x="1645" y="650" font-size="42" font-weight="900">ITINERARIO</text>
+  <text x="1645" y="696" class="muted" font-size="26">AJUSTEN SOLO POR LA FRANJA DE NINTENDO</text>
+
+  <line x1="1680" y1="770" x2="1680" y2="2520" stroke="#D8E2EB" stroke-width="10"/>
+
+  <g transform="translate(0,0)">
+    <circle cx="1680" cy="790" r="27" fill="#0C6E76"/><text x="1730" y="800" class="time">06:15</text>
+    <text x="1730" y="846" class="label">Fila en la entrada</text>
+    <text x="1730" y="886" class="small muted">App lista + pases registrados.</text>
+  </g>
+  <g transform="translate(0,170)">
+    <circle cx="1680" cy="790" r="27" fill="#FF5A36"/><text x="1730" y="800" class="time">~07:15-07:30</text>
+    <text x="1730" y="846" class="label">Entrar + reservar Nintendo</text>
+    <text x="1730" y="886" class="small muted">Tras cruzar el torno: app  Timed</text>
+    <text x="1730" y="922" class="small muted">Entry  Area  primera franja.</text>
+  </g>
+  <g transform="translate(0,390)">
+    <circle cx="1680" cy="790" r="27" fill="#FF5A36"/><text x="1730" y="800" class="time">07:30-10:15</text>
+    <text x="1730" y="846" class="label">2 · SUPER NINTENDO</text>
+    <text x="1730" y="886" class="small muted">Mario Kart  Mine Cart Madness</text>
+    <text x="1730" y="922" class="small muted"> Yoshi solo si espera max. 45 min.</text>
+  </g>
+  <g transform="translate(0,610)">
+    <circle cx="1680" cy="790" r="27" fill="#0C6E76"/><text x="1730" y="800" class="time">10:20-11:30</text>
+    <text x="1730" y="846" class="label">3-4 · WaterWorld + JAWS</text>
+    <text x="1730" y="886" class="small muted">Show solo si empieza en max. 30 min;</text>
+    <text x="1730" y="922" class="small muted">si no, JAWS y continuar.</text>
+  </g>
+  <g transform="translate(0,830)">
+    <circle cx="1680" cy="790" r="27" fill="#0C6E76"/><text x="1730" y="800" class="time">11:35-13:40</text>
+    <text x="1730" y="846" class="label">5 · Harry Potter</text>
+    <text x="1730" y="886" class="small muted">Almuerzo temprano  Forbidden</text>
+    <text x="1730" y="922" class="small muted">Journey  Hippogriff si max. 45 min.</text>
+  </g>
+  <g transform="translate(0,1050)">
+    <circle cx="1680" cy="790" r="27" fill="#0C6E76"/><text x="1730" y="800" class="time">13:50-15:50</text>
+    <text x="1730" y="846" class="label">6 · Jurassic Park</text>
+    <text x="1730" y="886" class="small muted">Flying Dinosaur  The Ride.</text>
+    <text x="1730" y="922" class="small muted">Usen Single Rider si aparece.</text>
+  </g>
+  <g transform="translate(0,1270)">
+    <circle cx="1680" cy="790" r="27" fill="#0C6E76"/><text x="1730" y="800" class="time">16:00-17:45</text>
+    <text x="1730" y="846" class="label">7-8 · San Francisco + Minions</text>
+    <text x="1730" y="886" class="small muted">Snack/descanso  Villain-Con o</text>
+    <text x="1730" y="922" class="small muted">Minion Mayhem: elijan menor fila.</text>
+  </g>
+  <g transform="translate(0,1490)">
+    <circle cx="1680" cy="790" r="27" fill="#FF5A36"/><text x="1730" y="800" class="time">18:00-20:30</text>
+    <text x="1730" y="846" class="label">9 · Halloween Horror Nights</text>
+    <text x="1730" y="886" class="small muted">New York + atracción temporal.</text>
+    <text x="1730" y="922" class="small muted">Confirmen mapa "Safe Route".</text>
+  </g>
+  <g transform="translate(0,1710)">
+    <circle cx="1680" cy="790" r="27" fill="#0C6E76"/><text x="1730" y="800" class="time">20:35-22:00</text>
+    <text x="1730" y="846" class="label">10-11 · Hollywood + salida</text>
+    <text x="1730" y="886" class="small muted">Hollywood Dream si alcanzan.</text>
+    <text x="1730" y="922" class="small muted">Compras al final; salir 22:00.</text>
+  </g>
+
+  <!-- bottom recommendations -->
+  <rect x="90" y="2750" width="2300" height="660" rx="34" fill="#102A43" filter="url(#shadow)"/>
+  <text x="145" y="2835" class="white" font-size="42" font-weight="900">RECOMENDACIONES CLAVE</text>
+
+  <rect x="145" y="2885" width="690" height="425" rx="26" fill="#173B5C"/>
+  <circle cx="210" cy="2950" r="32" fill="#FFC928"/><text x="210" y="2952" text-anchor="middle" dominant-baseline="central" font-size="31" font-weight="900">A</text>
+  <text x="260" y="2962" class="white" font-size="31" font-weight="900">ANTES DE LLEGAR</text>
+  <text x="190" y="3020" fill="#D8E8F4" font-size="28">+ App oficial actualizada.</text>
+  <text x="190" y="3067" fill="#D8E8F4" font-size="28">+ Registrar todos los pases.</text>
+  <text x="190" y="3114" fill="#D8E8F4" font-size="28">+ Datos móviles + batería externa.</text>
+  <text x="190" y="3161" fill="#D8E8F4" font-size="28">+ Desayuno antes de la fila.</text>
+  <text x="190" y="3208" fill="#D8E8F4" font-size="28">+ No correr; caminar decidido.</text>
+
+  <rect x="895" y="2885" width="690" height="425" rx="26" fill="#173B5C"/>
+  <circle cx="960" cy="2950" r="32" fill="#FF5A36"/><text x="960" y="2952" class="white" text-anchor="middle" dominant-baseline="central" font-size="31" font-weight="900">B</text>
+  <text x="1010" y="2962" class="white" font-size="31" font-weight="900">PLAN NINTENDO</text>
+  <text x="940" y="3020" fill="#D8E8F4" font-size="28">+ Si hay acceso libre: entren directo.</text>
+  <text x="940" y="3067" fill="#D8E8F4" font-size="28">+ Si pide franja: reserven al cruzar.</text>
+  <text x="940" y="3114" fill="#D8E8F4" font-size="28">+ Lleguen 15 min antes de la franja.</text>
+  <text x="940" y="3161" fill="#D8E8F4" font-size="28">+ No desinstalen ni cierren sesión.</text>
+  <text x="940" y="3208" fill="#D8E8F4" font-size="28">+ Una reserva conjunta para el grupo.</text>
+
+  <rect x="1645" y="2885" width="690" height="425" rx="26" fill="#173B5C"/>
+  <circle cx="1710" cy="2950" r="32" fill="#37B6A5"/><text x="1710" y="2952" class="white" text-anchor="middle" dominant-baseline="central" font-size="31" font-weight="900">C</text>
+  <text x="1760" y="2962" class="white" font-size="31" font-weight="900">PARA GANAR TIEMPO</text>
+  <text x="1690" y="3020" fill="#D8E8F4" font-size="28">+ Comer antes de 11:30 / después 15:00.</text>
+  <text x="1690" y="3067" fill="#D8E8F4" font-size="28">+ Single Rider cuando esté habilitado.</text>
+  <text x="1690" y="3114" fill="#D8E8F4" font-size="28">+ Revisar esperas antes de cada tramo.</text>
+  <text x="1690" y="3161" fill="#D8E8F4" font-size="28">+ Shows y cierres cambian: ver la app.</text>
+  <text x="1690" y="3208" fill="#D8E8F4" font-size="28">+ Compras únicamente al salir.</text>
+
+  <text x="1240" y="3382" text-anchor="middle" fill="#89A6BC" font-size="23">Horario y eventos sujetos a cambios · Verificar la app oficial la noche anterior y al entrar · Mapa no a escala</text>
+</svg>
