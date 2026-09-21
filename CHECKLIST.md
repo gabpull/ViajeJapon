@@ -7,7 +7,7 @@ Marca con `[x]` cuando esté listo.
 
 ## Pendientes ahora
 
-- [ ] **Comprar / cargar tren al llegar a Japón** (ver detalle abajo)
+- [x] **Comprar / cargar tren al llegar a Japón** (ver detalle abajo)
 - [ ] **Sello del pasaporte** en inmigración
 - [ ] **Llamar y escribirle a Daniela**
 - [ ] **Lista de compras** para cenar / comer (ir llenando abajo)
