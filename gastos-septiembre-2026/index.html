@@ -285,11 +285,11 @@
 
     .usd-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
     }
 
-    @media (max-width: 560px) {
+    @media (max-width: 720px) {
       .usd-grid { grid-template-columns: 1fr; }
     }
 
@@ -470,76 +470,76 @@
       </h1>
       <p class="lede">
         Clasificación a partir de alertas de Promerica, BAC y Banco Popular en Gmail.
-        Totales netos (sin pagos de tarjeta ni Pequeño Mundo del 31/08). Actualizado 21/09 noche.
+        Totales netos (sin pagos de tarjeta ni Pequeño Mundo del 31/08). Actualizado 24/09.
       </p>
     </header>
 
     <section class="totals">
       <article class="stat">
         <div class="label">Total colones</div>
-        <div class="value">₡293.912</div>
+        <div class="value">₡301.512</div>
         <div class="hint">Compras + SINPE salida</div>
       </article>
       <article class="stat">
         <div class="label">Total dólares</div>
-        <div class="value">$375.86</div>
-        <div class="hint">Klook + Cursor − AWS</div>
+        <div class="value">$483.20</div>
+        <div class="hint">Viaje + software + INS</div>
       </article>
       <article class="stat">
         <div class="label">Mayor categoría CRC</div>
         <div class="value">Supermercado</div>
-        <div class="hint">27% · ₡79.714</div>
+        <div class="hint">26% · ₡79.714</div>
       </article>
     </section>
 
     <section class="panel" style="animation-delay: 0.08s; margin-bottom: 1.25rem">
       <h2>Últimos gastos</h2>
-      <p class="sub">Movimientos recientes (20–21 sep) · el más nuevo primero</p>
+      <p class="sub">Movimientos recientes (22–23 sep) · el más nuevo primero</p>
       <ul class="recent">
         <li style="animation-delay: 0.05s">
-          <span class="when">21 sep · 12:24</span>
+          <span class="when">23 sep · 12:18</span>
+          <span class="who">Unión del Personal<span class="new">nuevo</span><span class="cat">Restaurantes · BAC</span></span>
+          <span class="amt">₡100</span>
+        </li>
+        <li style="animation-delay: 0.08s">
+          <span class="when">23 sep · 12:13</span>
           <span class="who">Unión del Personal<span class="new">nuevo</span><span class="cat">Restaurantes · BAC</span></span>
           <span class="amt">₡500</span>
         </li>
-        <li style="animation-delay: 0.08s">
-          <span class="when">21 sep · 07:24</span>
-          <span class="who">SINPE de Christian Jiménez<span class="cat">Ingreso · Popular (no es gasto)</span></span>
-          <span class="amt in">+₡1.000</span>
-        </li>
         <li style="animation-delay: 0.11s">
-          <span class="when">20 sep · 18:56</span>
-          <span class="who">Klook · Koyasan<span class="cat">Viaje Japón · Promerica</span></span>
-          <span class="amt">$27.35</span>
+          <span class="when">23 sep · 11:26</span>
+          <span class="who">Airalo eSIM<span class="new">nuevo</span><span class="cat">Viaje Japón · Promerica</span></span>
+          <span class="amt">$22.50</span>
         </li>
         <li style="animation-delay: 0.14s">
+          <span class="when">23 sep · 11:18</span>
+          <span class="who">INS link de pago dólares<span class="new">nuevo</span><span class="cat">Seguros · Promerica</span></span>
+          <span class="amt">$82.32</span>
+        </li>
+        <li style="animation-delay: 0.17s">
+          <span class="when">23 sep · 05:04</span>
+          <span class="who">Google<span class="new">nuevo</span><span class="cat">Software · Promerica</span></span>
+          <span class="amt">$2.52</span>
+        </li>
+        <li style="animation-delay: 0.2s">
+          <span class="when">22 sep · 15:55</span>
+          <span class="who">SINPE a Sylvia Pacheco<span class="new">nuevo</span><span class="cat">Transferencia · Popular</span></span>
+          <span class="amt">₡5.000</span>
+        </li>
+        <li style="animation-delay: 0.23s">
+          <span class="when">22 sep · 10:09</span>
+          <span class="who">SINPE a María Murillo<span class="new">nuevo</span><span class="cat">Transferencia · Popular</span></span>
+          <span class="amt">₡2.000</span>
+        </li>
+        <li style="animation-delay: 0.26s">
+          <span class="when">21 sep · 12:24</span>
+          <span class="who">Unión del Personal<span class="cat">Restaurantes · BAC</span></span>
+          <span class="amt">₡500</span>
+        </li>
+        <li style="animation-delay: 0.29s">
           <span class="when">20 sep · 18:36</span>
           <span class="who">Klook · trenes Tokio–Osaka<span class="cat">Viaje Japón · Promerica</span></span>
           <span class="amt">$338.54</span>
-        </li>
-        <li style="animation-delay: 0.17s">
-          <span class="when">20 sep · 12:15</span>
-          <span class="who">Cursor IDE<span class="cat">Software · Promerica</span></span>
-          <span class="amt">$10.97</span>
-        </li>
-        <li style="animation-delay: 0.2s">
-          <span class="when">20 sep · 11:57</span>
-          <span class="who">GESSA Peri del Sur<span class="cat">Supermercado · BAC</span></span>
-          <span class="amt">₡1.610</span>
-        </li>
-        <li style="animation-delay: 0.23s">
-          <span class="when">20 sep · 11:35</span>
-          <span class="who">SINPE a Catherine Gamboa<span class="cat">Transferencia · Popular</span></span>
-          <span class="amt">₡12.000</span>
-        </li>
-        <li style="animation-delay: 0.26s">
-          <span class="when">20 sep · 11:05</span>
-          <span class="who">Super Hacienda Vieja<span class="cat">Supermercado · BAC</span></span>
-          <span class="amt">₡5.000</span>
-        </li>
-        <li style="animation-delay: 0.29s">
-          <span class="when">19 sep · 22:09</span>
-          <span class="who">Uber Rides<span class="cat">Transporte · Promerica</span></span>
-          <span class="amt">₡2.190</span>
         </li>
       </ul>
     </section>
@@ -547,14 +547,14 @@
     <div class="grid">
       <section class="panel" style="animation-delay: 0.12s">
         <h2>Distribución en colones</h2>
-        <p class="sub">Ocho categorías · total ₡293.912</p>
+        <p class="sub">Ocho categorías · total ₡301.512</p>
         <div class="pie-layout">
           <div class="pie-wrap" aria-hidden="true">
             <svg viewBox="0 0 120 120" id="pie">
               <!-- rings drawn by script -->
             </svg>
             <div class="pie-center">
-              <strong>₡294k</strong>
+              <strong>₡302k</strong>
               <small>septiembre</small>
             </div>
           </div>
@@ -571,40 +571,46 @@
 
     <section class="panel" style="animation-delay: 0.22s">
       <h2>Dólares del mes</h2>
-      <p class="sub">Cargos internacionales en Promerica</p>
+      <p class="sub">Cargos internacionales / en USD en Promerica · total $483.20</p>
       <div class="usd-grid">
         <div class="usd-card">
           <div class="tag">Viaje a Japón</div>
-          <div class="big">$365.89</div>
-          <div class="detail">Klook trenes Tokio–Osaka $338.54 · Koyasan $27.35</div>
-          <div class="meter" style="--w:97%; --c: var(--accent)"><i style="--w:97%; --c:var(--accent)"></i></div>
+          <div class="big">$388.39</div>
+          <div class="detail">Klook $365.89 · Airalo eSIM $22.50</div>
+          <div class="meter"><i style="--w:80%; --c:var(--accent)"></i></div>
+        </div>
+        <div class="usd-card">
+          <div class="tag">Seguros INS</div>
+          <div class="big">$82.32</div>
+          <div class="detail">Link de pago dólares · 23 sep</div>
+          <div class="meter"><i style="--w:17%; --c:var(--plum)"></i></div>
         </div>
         <div class="usd-card">
           <div class="tag">Software</div>
-          <div class="big">$9.97</div>
-          <div class="detail">Cursor $10.97 · anulación AWS −$1.00</div>
+          <div class="big">$12.49</div>
+          <div class="detail">Cursor $10.97 · Google $2.52 · AWS −$1.00</div>
           <div class="meter"><i style="--w:3%; --c:var(--teal)"></i></div>
         </div>
       </div>
       <div class="highlights">
         <div class="hl">
-          <strong>Viaje = 97% USD</strong>
-          <p>Casi todo el gasto en dólares fue preparación del viaje a Japón.</p>
+          <strong>Viaje = 80% USD</strong>
+          <p>Klook + Airalo dominan el gasto en dólares; INS suma $82.32.</p>
         </div>
         <div class="hl">
           <strong>Comida en casa + fuera</strong>
-          <p>Supermercado + restaurantes suman ~₡126.400 (43% de CRC).</p>
+          <p>Supermercado + restaurantes suman ~₡127.000 (42% de CRC).</p>
         </div>
         <div class="hl">
           <strong>SINPE personales</strong>
-          <p>₡59.703 a familiares/conocidos; ingresos recibidos ~₡17.060.</p>
+          <p>₡66.703 a familiares/conocidos (+₡7.000 esta semana).</p>
         </div>
       </div>
     </section>
 
     <footer>
-      Fuente: notificaciones por correo · corte 21/09/2026 noche.
-      Incluye Unión del Personal ₡500 del 21/09.
+      Fuente: notificaciones por correo · corte 24/09/2026.
+      Incluye gastos nuevos del 22–23/09 (Airalo, INS, Google, SINPE, Unión).
       No incluye pagos de tarjeta (₡413.940 + $19.60 a Promerica, DTR a BAC)
       ni gastos en efectivo sin alerta.
     </footer>
@@ -613,9 +619,9 @@
   <script>
     const CRC = [
       { name: "Supermercado", amount: 79714, color: "#1f6f5b" },
+      { name: "SINPE salida", amount: 66703, color: "#3d7ea6" },
       { name: "Compras / equipo", amount: 66599, color: "#c45c26" },
-      { name: "SINPE salida", amount: 59703, color: "#3d7ea6" },
-      { name: "Restaurantes", amount: 46645, color: "#b85c6a" },
+      { name: "Restaurantes", amount: 47245, color: "#b85c6a" },
       { name: "Servicios", amount: 17095, color: "#5c4a6e" },
       { name: "Salud", amount: 9647, color: "#6b8f71" },
       { name: "Transporte", amount: 8309, color: "#c9a227" },
