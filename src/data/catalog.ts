@@ -1,3 +1,5 @@
+import posters from './posters.json'
+
 export type Platform = 'apple' | 'claro'
 export type ContentType = 'serie' | 'pelicula'
 
@@ -10,6 +12,7 @@ export type Title = {
   year?: number
   note?: string
   accent: string
+  poster?: string
 }
 
 /** Apple TV+: todo es Original incluido en la suscripción (sin alquilar). */
@@ -156,18 +159,23 @@ const APPLE_ACCENTS = ['#1a3a4a', '#2d4a3e', '#3a4a2f', '#4a3520', '#1f3344', '#
 const CLARO_ACCENTS = ['#5c2a1e', '#1e3d35', '#2a3550', '#4a2f1a', '#1a4040', '#3a3020', '#2f3a28']
 
 function build(
-  items: Omit<Title, 'id' | 'platform' | 'type' | 'accent'>[],
+  items: Omit<Title, 'id' | 'platform' | 'type' | 'accent' | 'poster'>[],
   platform: Platform,
   type: ContentType,
   accents: string[],
 ): Title[] {
-  return items.map((item, i) => ({
-    ...item,
-    id: `${platform}-${type}-${i}`,
-    platform,
-    type,
-    accent: accents[i % accents.length],
-  }))
+  return items.map((item, i) => {
+    const id = `${platform}-${type}-${i}`
+    const poster = (posters as Record<string, string>)[id]
+    return {
+      ...item,
+      id,
+      platform,
+      type,
+      accent: accents[i % accents.length],
+      ...(poster ? { poster } : {}),
+    }
+  })
 }
 
 export const catalog: Title[] = [

@@ -24,6 +24,7 @@ function matches(title: Title, query: string) {
 }
 
 function TitleCard({ title }: { title: Title }) {
+  const [imgFailed, setImgFailed] = useState(false)
   const words = title.name.replace(/[:']/g, '').split(/\s+/).filter(Boolean)
   const initial =
     words.length === 1
@@ -33,12 +34,28 @@ function TitleCard({ title }: { title: Title }) {
           .map((w) => w[0])
           .join('')
           .toUpperCase()
+  const showImage = Boolean(title.poster) && !imgFailed
 
   return (
     <article className="title-card" style={{ '--accent': title.accent } as CSSProperties}>
-      <div className="poster" aria-hidden="true">
-        <span className="poster-initial">{initial}</span>
-        <span className="poster-grain" />
+      <div className={`poster${showImage ? ' has-image' : ''}`}>
+        {showImage ? (
+          <img
+            src={title.poster}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={() => setImgFailed(true)}
+          />
+        ) : (
+          <>
+            <span className="poster-initial" aria-hidden="true">
+              {initial}
+            </span>
+            <span className="poster-grain" aria-hidden="true" />
+          </>
+        )}
       </div>
       <div className="title-meta">
         <div className="title-tags">
